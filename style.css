@@ -5,7 +5,7 @@ body {
 
 header {
   background-color: #3498db;
-  color: white;
+  color: purple;
   text-align: center;
   padding: 40px 0;
 }
@@ -32,12 +32,34 @@ p {
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .signup-btn:hover, .login-btn:hover {
   background-color: #27ae60;
 }
 
+.menu-btn {
+  display: none;
+}
+
+/* Navigation Styles */
+nav {
+  text-align: center;
+}
+
+nav.active {
+  display: block;
+}
+
+nav a {
+  display: block;
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+}
+
+/* Background image styles */
 .background-image {
   background-image: url('smiling_students.jpg');
   background-size: cover;
